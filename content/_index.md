@@ -6,23 +6,23 @@
   font-style: italic;
   color: var(--accent);
   font-size: 1rem;
-  opacity: 0.65;
+  opacity: 0.95;
 ">
 “Now I'm a scientific expert; that means I know nothing about absolutely everything.”
 ― Arthur C. Clarke, 2001: A Space Odyssey
 </div>
 
 
-<br><br><br><br>
+<br><br>
 
 <figure style="
   float: right;
   text-align: center;
   margin: 0 0 2rem 2rem;
 ">
-  <img src="/images/me.png" width="280" style="border-radius: 8px;" />
+  <img src="/images/me1.png" width="280" style="border-radius: 8px;" />
   <figcaption style="font-size: 0.85rem; opacity: 0.75; margin-top: 0.4rem;">
-    Sayuru Shenal
+    Sayuru Amugoda
   </figcaption>
 </figure>
 

@@ -10,6 +10,7 @@ theme = "re-terminal"
   showMenuItems = 4
   fullWidthTheme = false
   centerTheme = true
+  Copyright = "© 2025 Sayuru Amugoda"
 
 [languages]
   [languages.en]
@@ -18,9 +19,13 @@ theme = "re-terminal"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about/"
+        identifier = "bio"
+        name = "Bio"
+        url = "/bio/"
+      [[languages.en.menu.main]]
+        identifier = "experience"
+        name = "Experience"
+        url = "/experience/"
       [[languages.en.menu.main]]
         identifier = "projects"
         name = "Projects"

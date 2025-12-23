@@ -1,8 +1,8 @@
 html,
 body {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.85),
-      rgba(0, 0, 0, 0.65)),
+    linear-gradient(rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.55)),
     url("/images/matrix1.png");
 
   background-size: cover;
@@ -31,12 +31,12 @@ body {
 
 
 details.custom-dropdown {
-  background-color: rgba(63, 185, 80, 0.08);
+  background-color: rgba(83, 185, 80, 0.08);
   /* soft accent tint */
   border-radius: 8px;
   margin-bottom: 1.5rem;
   overflow: hidden;
-  border: 1px solid rgba(63, 185, 80, 0.25);
+  border: 1px solid rgba(83, 185, 80, 0.25);
 }
 
 
@@ -92,5 +92,5 @@ details.custom-dropdown .dropdown-content a:hover {
 }
 
 details.custom-dropdown[open] {
-  background-color: rgba(63, 185, 80, 0.12);
+  background-color: rgba(103, 185, 80, 0.12);
 }

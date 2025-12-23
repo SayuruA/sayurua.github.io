@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Bio"
 ---
 
 <!-- ![Me](/images/me.png) -->
