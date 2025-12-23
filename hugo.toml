@@ -4,6 +4,7 @@ title = "Sayuru Amugoda"
 theme = "re-terminal"
 
 [params]
+  customCSS = ["css/custom.css"]
   contentTypeName = "posts"
   themeColor = "green"
   showMenuItems = 4
@@ -24,3 +25,8 @@ theme = "re-terminal"
         identifier = "projects"
         name = "Projects"
         url = "/projects/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
