@@ -1,4 +1,77 @@
 :root {
-  --accent: #9fb950;          /* replace with your quote green */
-  --accent-secondary: #9fb950;
+  --accent: #3fb950;
+  --accent-secondary: #3fb950;
+}
+
+/* Dropdown Sections */
+/* details.custom-dropdown {
+  background-color: var(--accent);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+} */
+details.custom-dropdown {
+  background-color: rgba(63, 185, 80, 0.08);
+  /* soft accent tint */
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(63, 185, 80, 0.25);
+}
+
+
+
+details.custom-dropdown summary {
+  padding: 0.9rem 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  color: var(--accent);
+  opacity: 0.9;
+}
+
+details.custom-dropdown summary::-webkit-details-marker {
+  display: none;
+  /* webkit */
+}
+
+details.custom-dropdown summary::after {
+  content: '+';
+  font-size: 1.2rem;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+details.custom-dropdown[open] summary::after {
+  content: '−';
+  /* minus sign */
+}
+
+details.custom-dropdown .dropdown-content {
+  padding: 0.9rem 1.1rem 1.1rem 1.1rem;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(63, 185, 80, 0.25);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+details.custom-dropdown .dropdown-content a {
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 1rem;
+  color: inherit;
+  border-bottom: 1px dashed currentColor;
+}
+
+details.custom-dropdown .dropdown-content a:hover {
+  border-bottom-style: solid;
+}
+
+details.custom-dropdown[open] {
+  background-color: rgba(63, 185, 80, 0.12);
 }
