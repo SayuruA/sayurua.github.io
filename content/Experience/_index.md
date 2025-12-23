@@ -35,6 +35,6 @@ Additional work included:
 
 <br>
 
-<a href="/docs/service-letter.pdf" target="_blank" class="cv-link">📄 Service Letter (PDF)</a>
+<a href="/docs/Service_letter.pdf" target="_blank" class="cv-link">📄 Service Letter (PDF)</a>
 
 </div>
