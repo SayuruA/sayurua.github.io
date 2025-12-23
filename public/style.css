@@ -1,3 +1,18 @@
+html,
+body {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.65)),
+    url("/images/matrix1.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+
 :root {
   --accent: #3fb950;
   --accent-secondary: #3fb950;
@@ -11,6 +26,10 @@
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.05);
 } */
+
+
+
+
 details.custom-dropdown {
   background-color: rgba(63, 185, 80, 0.08);
   /* soft accent tint */
