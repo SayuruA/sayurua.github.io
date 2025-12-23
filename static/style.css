@@ -1,8 +1,8 @@
 html,
 body {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.55)),
+    linear-gradient(rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.45)),
     url("/images/matrix1.png");
 
   background-size: cover;
@@ -17,6 +17,8 @@ body {
   --accent: #3fb950;
   --accent-secondary: #3fb950;
 }
+
+
 
 /* Dropdown Sections */
 /* details.custom-dropdown {
@@ -93,4 +95,40 @@ details.custom-dropdown .dropdown-content a:hover {
 
 details.custom-dropdown[open] {
   background-color: rgba(103, 185, 80, 0.12);
+}
+
+/* Navigation links (base) */
+nav a {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+/* Hover */
+nav a:hover {
+  opacity: 1;
+}
+
+/* Active page */
+nav a.menu-active {
+  color: var(--accent) !important;
+  opacity: 1;
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent);
+}
+
+/* CV Link styled like dropdown */
+.cv-link {
+  display: block;
+  background-color: rgba(83, 185, 80, 0.08);
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid rgba(83, 185, 80, 0.25);
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.cv-link:hover {
+  background-color: rgba(103, 185, 80, 0.15);
 }

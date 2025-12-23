@@ -44,10 +44,11 @@
     <summary>Get in touch</summary>
     <div class="dropdown-content">
       <p>
-        <a href="https://linkedin.com/in/sayuru-shenal" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/sayuru-amugoda-289626276/" target="_blank">LinkedIn</a>
         <a href="https://github.com/SayuruA" target="_blank">GitHub</a>
-        <!-- email -->
         <a href="mailto:sayurushenal141@gmail.com">Email</a>
+        <!-- phone -->
+        <!-- <a href="tel">Phone</a> -->
       </p>
     </div>
   </details>

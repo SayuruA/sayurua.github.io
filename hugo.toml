@@ -7,10 +7,14 @@ theme = "re-terminal"
   customCSS = ["css/custom.css"]
   contentTypeName = "posts"
   themeColor = "green"
-  showMenuItems = 4
+  showMenuItems = 5
   fullWidthTheme = false
   centerTheme = true
   Copyright = "© 2025 Sayuru Amugoda"
+
+  [params.Logo]
+    logoText = "Home"
+    LogoHomeLink = "/"
 
 [languages]
   [languages.en]
@@ -30,6 +34,10 @@ theme = "re-terminal"
         identifier = "projects"
         name = "Projects"
         url = "/projects/"
+      [[languages.en.menu.main]]
+        identifier = "not_a_blog"
+        name = "Not a blog!"
+        url = "/not_a_blog/"
 
 [markup]
   [markup.goldmark]
