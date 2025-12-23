@@ -19,6 +19,7 @@ I enjoy working on systems where performance, correctness, and real-world constr
 </div>
 
 <div style="max-width: 760px; margin: 2rem auto; font-size: 0.85rem;">
+
 I worked as part of an agile Scrum team focused on designing and implementing backend algorithms for **network analysis and monitoring tools**. My work primarily involved **performance-critical C++ systems**, with exposure to high-throughput packet processing and large-scale data analysis.
 
 During this internship, I gained hands-on experience with **high-performance systems development**, using libraries such as **DPDK** and **FastBit**, and working close to the data plane.
