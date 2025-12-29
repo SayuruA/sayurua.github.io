@@ -11,6 +11,7 @@ theme = "re-terminal"
   fullWidthTheme = false
   centerTheme = true
   Copyright = "© 2025 Sayuru Amugoda"
+  favicon = "/favicon.ico"  # Custom favicon - replace the file in /static/ folder
 
   [params.Logo]
     logoText = "Home"
@@ -19,7 +20,7 @@ theme = "re-terminal"
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Your Name"
+    title = "SayurusSpace"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
@@ -34,10 +35,7 @@ theme = "re-terminal"
         identifier = "projects"
         name = "Projects"
         url = "/projects/"
-      [[languages.en.menu.main]]
-        identifier = "not_a_blog"
-        name = "Not a blog!"
-        url = "/not_a_blog/"
+      
 
 [markup]
   [markup.goldmark]

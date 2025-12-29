@@ -29,7 +29,7 @@ I worked as software engineering intern at [Paraqum Technologies](https://www.pa
 title: "Bio"
 --- -->
 
-<div style="max-width: 760px; margin: 2rem auto;font-size: 0.86rem; text-align: center;font-style:italic;">
+<div style="max-width: 760px; margin: 2rem auto;font-size: 0.95rem; text-align: center;font-style:italic;">
 I am a lifelong learner who believes that having a strong grasp of fundamentals and critical thinking is core to problem solving.
 </div>
 
@@ -41,17 +41,17 @@ I am a lifelong learner who believes that having a strong grasp of fundamentals 
   margin: 0 0 2rem 2rem;
 ">
   <img src="/images/me1.png" width="280" style="border-radius: 8px;" />
-  <figcaption style="font-size: 0.85rem; opacity: 0.75; margin-top: 0.4rem;">
+  <figcaption style="font-size: 0.9rem; opacity: 0.75; margin-top: 0.4rem;">
     Sayuru Amugoda
   </figcaption>
 </figure>
 
-<div style="max-width: 760px; margin: 2rem auto; font-size: 0.85rem;">
+<div style="max-width: 760px; margin: 2rem auto; font-size: 0.88rem;">
 
 Currently I am in my final year of **Electronic and Telecommunications Engineering** department at the **University of Moratuwa**. My interests span a very different set of areas, including **natural language processing**, **performance-critical software**, and **wireless telecommunications**.
 
 
-I am currently working on training **large language models on privacy-sensitive data in resource-constrained environments**. This final year project explore the areas of **split and federated learning** in a scenario where the training data is distributed across multiple parties, each with limited computational resources but sharing data is not an option due to privacy concerns.
+At the moment, I am mainly working on training **large language models on privacy-sensitive data in resource-constrained environments**. This final year project explore the areas of **split and federated learning** in a scenario where the training data is distributed across multiple parties, each with limited computational resources but sharing data is not an option due to privacy concerns.
 
 This work is supervised by Dr. [Kasun Hemachandra](https://scholar.google.com/citations?user=RT8_dlYAAAAJ&hl=en) and Prof. [Tharaka Samarasinghe](https://tharakas.staff.uom.lk/) and Prof. [Madushanka Liyanage](https://scholar.google.com/citations?user=p1n0ioUAAAAJ&hl=en).
 

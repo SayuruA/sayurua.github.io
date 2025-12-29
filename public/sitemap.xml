@@ -6,9 +6,9 @@
   </url><url>
     <loc>http://localhost:1313/bio/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-  </url><url>
     <loc>http://localhost:1313/experience/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/not_a_blog/</loc>
   </url><url>
