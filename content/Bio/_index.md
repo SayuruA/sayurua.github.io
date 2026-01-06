@@ -51,9 +51,8 @@ I am a lifelong learner who believes that having a strong grasp of fundamentals 
 Currently I am in my final year of **Electronic and Telecommunications Engineering** department at the **University of Moratuwa**. My interests span a very different set of areas, including **natural language processing**, **performance-critical software**, and **wireless telecommunications**.
 
 
-At the moment, I am mainly working on training **large language models on privacy-sensitive data in resource-constrained environments**. This final year project explore the areas of **split and federated learning** in a scenario where the training data is distributed across multiple parties, each with limited computational resources but sharing data is not an option due to privacy concerns.
+At the moment, I am mainly working on training **large language models on privacy-sensitive data in resource-constrained environments**. This final year project explore the areas of **split and federated learning** in a scenario where the training data is distributed across multiple parties, each with limited computational resources but sharing data is not an option due to privacy concerns. [See Projects](/projects)
 
-This work is supervised by Dr. [Kasun Hemachandra](https://scholar.google.com/citations?user=RT8_dlYAAAAJ&hl=en) and Prof. [Tharaka Samarasinghe](https://tharakas.staff.uom.lk/) and Prof. [Madushanka Liyanage](https://scholar.google.com/citations?user=p1n0ioUAAAAJ&hl=en).
 
 I previously worked as a **Software Engineering Intern** at [Paraqum Technologies](https://www.paraqum.com/) Pvt. Ltd., Sri Lanka, where I contributed to **C++-based high-performance network analysis infrastructure**.
 
