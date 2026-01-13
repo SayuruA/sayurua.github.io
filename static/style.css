@@ -132,3 +132,60 @@ nav a.menu-active {
 .cv-link:hover {
   background-color: rgba(103, 185, 80, 0.15);
 }
+
+/* Subtle glow effect for Bio link on home page */
+/* nav a.bio-glow {
+  position: relative;
+  color: var(--accent);
+  opacity: 1;
+} */
+
+nav a.bio-glow::after {
+  content: "";
+  position: absolute;
+  left: -6px;
+  right: -6px;
+  bottom: 0px;
+  height: 8px;
+  background: var(--accent);
+  opacity: 0.4;
+  filter: blur(4px);
+  animation: underline-glow 1s ease-in-out infinite;
+}
+
+@keyframes underline-glow {
+
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+
+  50% {
+    opacity: 0.9;
+  }
+}
+
+/* nav a.bio-glow {
+  color: var(--accent);
+  opacity: 1;
+  text-shadow:
+    0 0 8px rgba(63, 185, 80, 0.8),
+    0 0 12px rgba(63, 185, 80, 0.1);
+  animation: subtle-glow 2s ease-in-out infinite;
+}
+
+@keyframes subtle-glow {
+
+  0%,
+  100% {
+    text-shadow:
+      0 0 8px rgba(63, 185, 80, 0.4),
+      0 0 12px rgba(63, 185, 80, 0.2);
+  }
+
+  10% {
+    text-shadow:
+      0 0 12px rgba(63, 185, 80, 0.6),
+      0 0 16px rgba(63, 185, 80, 0.3);
+  }
+} */

@@ -4,7 +4,7 @@ title: "Projects"
 
 <div style="max-width: 760px; margin: 2rem auto; font-size: 1rem;">
 
-**Final Year Project: Training LLMs on privacy-sensitive data in resource-constrained environments (2-mins)**
+### **Final Year Project: Training LLMs on privacy-sensitive data in resource-constrained environments (2-mins)**
 
 <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0 1.5rem 0;">
   <span style="display: inline-block; padding: 0.4rem 0.8rem; background-color: rgba(63, 185, 80, 0.15); border: 1px solid rgba(63, 185, 80, 0.4); border-radius: 6px; font-size: 0.85rem; font-weight: 500; color: #3fb950;">Federated Learning (FL)</span>
@@ -56,9 +56,28 @@ In this final year project we strive to explore solutions to these challenges, a
 
 While we focus on a specific use case in networks (O-RAN), as a drop-in replacement for federated learning, we believe this approach with more advancements in the future is the way to train large models on privacy-sensitive data all the while keeping the end devices from getting bloated-out with model training. We are working with Dr. [Kasun Hemachandra](https://scholar.google.com/citations?user=RT8_dlYAAAAJ&hl=en) and Prof. [Tharaka Samarasinghe](https://tharakas.staff.uom.lk/) from department of Electronic and Telecommunication University of Moratuwa, Sri Lanka and Prof. [Madushanka Liyanage](https://www.madhusanka.com/) from NetsLab University College Dublin, Ireland.
 
-Current Progress:
-- Integrate compression mechanisms to existing split federated learning pipeline.
-- Practical Deployment on an Open Radio Access Network (O-RAN) testbed.
+---
+
+#### Main Tasks
+
+**1. Improvements/Extensions to SFL Architecture for LLMs**
+   - Explore mathematical properties of LLM hidden state tensors (at the split layer) to adapt compression techniques achieving aggressive compression ratios
+   - Integrate compression algorithm to existing split federated learning pipeline and evaluate performance degradation
+   - Re-implement optimizations and features available in the original LLM architecture, such as token caching, quantization, and flash-attention at split layers
+
+**2. Distributed Implementation on O-RAN Testbed**
+   - Implement variants such as:
+     - Taking a whole O-RAN as a client and a cloud as a server
+     - Deploying client and server models within a single large O-RAN centralized unit (CU) and distributed units (DU)
+   - Develop C++ based x/rApps for data collection from the network
+   - Create a dataset of network data for training the model
+
+---
+
+#### Current Progress
+
+- ✓ Design and integrate compression mechanisms to existing split federated learning pipeline. We explored the areas of vector quantization and dimensionality reduction. Dimensionality reduction approach is driven by the conjecture that the hidden state vectors lie on a lower-dimensional manifold, and we are currently experimenting with trying to map the hidden states to a finite set of vectors so we exploit vector quantization.
+- ✓ Practical Deployment on an Open Radio Access Network (O-RAN) testbed. We have successfully deployed the Qwen 2 billion models in a split federated learning pipeline complete with prototype compression module on UCD testbed, and we are currently working on adding features such as token caching.  
 
 </div>
 

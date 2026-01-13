@@ -6,8 +6,7 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" Final Year Project: Training LLMs on privacy-sensitive data in resource-constrained environments (2-mins)
-Federated Learning (FL) Split-Federated Learning (SFL) Large Language Models (LLMs) Open Radio Access Networks (O-RAN) Google can train AI models on our private data without reading a single one.
+<meta name="description" content=" Final Year Project: Training LLMs on privacy-sensitive data in resource-constrained environments (2-mins) Federated Learning (FL) Split-Federated Learning (SFL) Large Language Models (LLMs) Open Radio Access Networks (O-RAN) Google can train AI models on our private data without reading a single one.
 " />
 <meta name="keywords" content="" />
 
@@ -45,8 +44,7 @@ Federated Learning (FL) Split-Federated Learning (SFL) Large Language Models (LL
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Projects">
-<meta property="og:description" content=" Final Year Project: Training LLMs on privacy-sensitive data in resource-constrained environments (2-mins)
-Federated Learning (FL) Split-Federated Learning (SFL) Large Language Models (LLMs) Open Radio Access Networks (O-RAN) Google can train AI models on our private data without reading a single one.
+<meta property="og:description" content=" Final Year Project: Training LLMs on privacy-sensitive data in resource-constrained environments (2-mins) Federated Learning (FL) Split-Federated Learning (SFL) Large Language Models (LLMs) Open Radio Access Networks (O-RAN) Google can train AI models on our private data without reading a single one.
 " />
 <meta property="og:url" content="http://localhost:1313/projects/" />
 <meta property="og:site_name" content="SayurusSpace" />
@@ -128,12 +126,15 @@ Federated Learning (FL) Split-Federated Learning (SFL) Large Language Models (LL
         
         
         
+        
         <li><a href="/bio/"  >Bio</a></li>
         
         
         
         
+        
         <li><a href="/experience/"  >Experience</a></li>
+        
         
         
         
@@ -154,7 +155,7 @@ Federated Learning (FL) Split-Federated Learning (SFL) Large Language Models (LL
   
     <div class="index-content">
       <div style="max-width: 760px; margin: 2rem auto; font-size: 1rem;">
-<p><strong>Final Year Project: Training LLMs on privacy-sensitive data in resource-constrained environments (2-mins)</strong></p>
+<h3 id="final-year-project-training-llms-on-privacy-sensitive-data-in-resource-constrained-environments-2-mins"><strong>Final Year Project: Training LLMs on privacy-sensitive data in resource-constrained environments (2-mins)</strong></h3>
 <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0 1.5rem 0;">
   <span style="display: inline-block; padding: 0.4rem 0.8rem; background-color: rgba(63, 185, 80, 0.15); border: 1px solid rgba(63, 185, 80, 0.4); border-radius: 6px; font-size: 0.85rem; font-weight: 500; color: #3fb950;">Federated Learning (FL)</span>
   <span style="display: inline-block; padding: 0.4rem 0.8rem; background-color: rgba(63, 185, 80, 0.15); border: 1px solid rgba(63, 185, 80, 0.4); border-radius: 6px; font-size: 0.85rem; font-weight: 500; color: #3fb950;">Split-Federated Learning (SFL)</span>
@@ -193,10 +194,30 @@ Federated Learning (FL) Split-Federated Learning (SFL) Large Language Models (LL
 </figure>
 <p>In this final year project we strive to explore solutions to these challenges, and build a model that auotmates security related administartive tasks in an Open Radio Access Network (O-RAN).</p>
 <p>While we focus on a specific use case in networks (O-RAN), as a drop-in replacement for federated learning, we believe this approach with more advancements in the future is the way to train large models on privacy-sensitive data all the while keeping the end devices from getting bloated-out with model training. We are working with Dr. <a href="https://scholar.google.com/citations?user=RT8_dlYAAAAJ&amp;hl=en">Kasun Hemachandra</a> and Prof. <a href="https://tharakas.staff.uom.lk/">Tharaka Samarasinghe</a> from department of Electronic and Telecommunication University of Moratuwa, Sri Lanka and Prof. <a href="https://www.madhusanka.com/">Madushanka Liyanage</a> from NetsLab University College Dublin, Ireland.</p>
-<p>Current Progress:</p>
+<hr>
+<h4 id="main-tasks">Main Tasks</h4>
+<p><strong>1. Improvements/Extensions to SFL Architecture for LLMs</strong></p>
 <ul>
-<li>Integrate compression mechanisms to existing split federated learning pipeline.</li>
-<li>Practical Deployment on an Open Radio Access Network (O-RAN) testbed.</li>
+<li>Explore mathematical properties of LLM hidden state tensors (at the split layer) to adapt compression techniques achieving aggressive compression ratios</li>
+<li>Integrate compression algorithm to existing split federated learning pipeline and evaluate performance degradation</li>
+<li>Re-implement optimizations and features available in the original LLM architecture, such as token caching, quantization, and flash-attention at split layers</li>
+</ul>
+<p><strong>2. Distributed Implementation on O-RAN Testbed</strong></p>
+<ul>
+<li>Implement variants such as:
+<ul>
+<li>Taking a whole O-RAN as a client and a cloud as a server</li>
+<li>Deploying client and server models within a single large O-RAN centralized unit (CU) and distributed units (DU)</li>
+</ul>
+</li>
+<li>Develop C++ based x/rApps for data collection from the network</li>
+<li>Create a dataset of network data for training the model</li>
+</ul>
+<hr>
+<h4 id="current-progress">Current Progress</h4>
+<ul>
+<li>✓ Design and integrate compression mechanisms to existing split federated learning pipeline. We explored the areas of vector quantization and dimensionality reduction. Dimensionality reduction approach is driven by the conjecture that the hidden state vectors lie on a lower-dimensional manifold, and we are currently experimenting with trying to map the hidden states to a finite set of vectors so we exploit vector quantization.</li>
+<li>✓ Practical Deployment on an Open Radio Access Network (O-RAN) testbed. We have successfully deployed the Qwen 2 billion models in a split federated learning pipeline complete with prototype compression module on UCD testbed, and we are currently working on adding features such as token caching.</li>
 </ul>
 </div>
 <!-- My Team: -->

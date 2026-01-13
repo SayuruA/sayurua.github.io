@@ -5,8 +5,12 @@
         {{ range first $.Site.Params.showMenuItems $.Site.Menus.main }}
         {{ if not .HasChildren }}
         {{ $isActive := or (eq $.RelPermalink .URL) (hasPrefix $.RelPermalink .URL) }}
+        {{ $isBioOnHome := and (eq .Identifier "bio") (eq $.RelPermalink "/") }}
         <li><a href="{{ .URL }}" {{ if .Params.NewTab -}} target="_blank" {{- end }} {{ if $isActive
-                }}class="menu-active" {{ end }}>{{ .Name }}</a></li>
+                }}class="menu-active" {{ else if $isBioOnHome }}class="
+{{ if $isActive }}menu-active{{ end }}
+{{ if $isBioOnHome }} bio-glow{{ end }}
+" {{ end }}>{{ .Name }}</a></li>
         {{ else }}
         <li>
             <ul class="menu">
@@ -55,8 +59,15 @@
         {{ range $.Site.Menus.main }}
         {{ if not .HasChildren }}
         {{ $isActive := or (eq $.RelPermalink .URL) (hasPrefix $.RelPermalink .URL) }}
-        <li><a href="{{ .URL }}" {{ if .Params.NewTab -}} target="_blank" {{- end }} {{ if $isActive
-                }}class="menu-active" {{ end }}>{{ .Name }}</a></li>
+        {{ $isBioOnHome := and (eq .Identifier "bio") (eq $.RelPermalink "/") }}
+        <li>
+            <a href="{{ .URL }}" {{ if .Params.NewTab -}} target="_blank" {{- end }} class="
+     {{ if $isActive }}menu-active{{ end }}
+     {{ if $isBioOnHome }} bio-glow{{ end }}
+     ">
+                {{ .Name }}
+            </a>
+        </li>
         {{ end }}
         {{ end }}
         {{ end }}
