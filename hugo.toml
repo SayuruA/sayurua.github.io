@@ -35,6 +35,10 @@ theme = "re-terminal"
         identifier = "projects"
         name = "Projects"
         url = "/projects/"
+      [[languages.en.menu.main]]
+        identifier = "papers"
+        name = "Papers"
+        url = "/papers/"
       
 
 [markup]
